@@ -1,15 +1,5 @@
-include "main.h"
-/**
-*main - check the code for Holberton School students.
-*Return: Always 0.
-*/
+int _putchar(char c);
 
-int main(void)
+void print_alphabet(void);
 
-{
-
-	print_alphabet_x10();
-
-	return (0);
-
-}
+void print_alphabet_x10(void);
