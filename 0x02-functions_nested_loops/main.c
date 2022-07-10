@@ -1,11 +1,15 @@
-#ifndef MAIN_H
-#define MAIN_H
-
+include "main.h"
 /**
- * main - prints the name of the file.
- *Return: Always 0.
+ *main - calls other functions
+ *Return: 0
  */
 
-int _putchar(char c)
+int main(void)
 
-#endif
+{
+
+		printsomething();
+
+		return (0);
+
+}
