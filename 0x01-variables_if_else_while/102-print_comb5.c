@@ -1,58 +1,48 @@
 #include <stdio.h>
+
 /**
- *main -> assign a random number to the variable n each time it is executed
- *and print the last digit of the number stored in the variable n
- *Return: Always 0 (Success)
+ *main - Entry point
+ *
+ *Return: Always 0 (success/correct)
  */
 
 int main(void)
 
+
 {
 
-	int i, j;
+int first_nums;
 
+int second_nums;
 
+for (first_nums = 0; first_nums < 100 ; first_nums++)
 
-	for (i = 0; i < 100; i++)
+{
 
-	{
+for (second_nums = first_nums + 1 ; second_nums < 100; second_nums++)
 
-		for (j = 0; j < 100; j++)
+{
 
-		{
+putchar (first_nums / 10 + '0');
 
-			if (i < j)
+putchar (first_nums % 10 + '0');
 
-			{
+putchar (' ');
 
-				putchar((i / 10) + 48);
+putchar (second_nums / 10 + '0');
+putchar (second_nums % 10 + '0');
 
-				putchar((i % 10) + 48);
+if (first_nums == 98 && second_nums == 99)
 
-				putchar(' ');
+{
 
-				putchar((j / 10) + 48);
+break;
 
-				putchar((j % 10) + 48);
-
-				if (i != 98 || j != 99)
-
-				{
-
-					putchar(',');
-
-					putchar(' ');
-
-				}
-
-			}
-
-		}
-
-	}
-
-	putchar('\n');
-
-	return (0);
-
+}
+putchar(',');
+putchar (' ');
+}
+}
+putchar('\n');
+return (0);
 }
