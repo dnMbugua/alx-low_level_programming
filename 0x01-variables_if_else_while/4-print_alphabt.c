@@ -1,15 +1,30 @@
 #include <stdio.h>
+
 /**
- *main - prints the phrase Programming is like building a multilingual puzzle
- *Return: 0 if exited properly, non-zero otherwise
+ *main - Entry point
+ *
+ *Return: Always 0 (Success/correct)
  */
 
 int main(void)
 
 {
 
-	puts("\"Programming is like building a multilingual puzzle");
+char alphabet;
 
-	return (0);
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 
+{
+
+if (alphabet == 'q')
+
+continue;
+
+else if (alphabet == 'e')
+
+continue;
+putchar(alphabet);
+}
+putchar('\n');
+return (0);
 }
